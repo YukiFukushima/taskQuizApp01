@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="taskQuizApp01" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="沖縄" translatesAutoresizingMaskIntoConstraints="NO" id="QK3-Qt-MgN">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="270"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="270" id="OsU-Mp-rpT"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x9v-mo-vvS">
+                                <rect key="frame" x="100" y="51" width="214" height="151"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="151" id="Tqf-Jj-y2P"/>
+                                </constraints>
+                                <string key="text">FUKU
+QUIZ</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="52"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yQt-VL-rO2">
+                                <rect key="frame" x="157" y="318" width="100" height="30"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="idm-FW-DO8"/>
+                                    <constraint firstAttribute="width" constant="100" id="sSu-rI-UZl"/>
+                                </constraints>
+                                <state key="normal" title="START">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="tappedStartBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ll5-cz-L84"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30秒以内：達人" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gk8-ep-HGa">
+                                <rect key="frame" x="125" y="443" width="164" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30秒〜1分以内：普通" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OtN-xC-cvH">
+                                <rect key="frame" x="104" y="481" width="206" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1分以上：Googleで調べてみてね" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nkn-Zn-mDx">
+                                <rect key="frame" x="61" y="519" width="292" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="gk8-ep-HGa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="125" id="00c-dL-GCz"/>
+                            <constraint firstItem="yQt-VL-rO2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2IM-hW-rcM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="x9v-mo-vvS" secondAttribute="trailing" constant="100" id="3Ax-Zk-ow7"/>
+                            <constraint firstItem="QK3-Qt-MgN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Czj-5f-IZ8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Nkn-Zn-mDx" secondAttribute="trailing" constant="61" id="HSM-fn-LyD"/>
+                            <constraint firstItem="OtN-xC-cvH" firstAttribute="top" secondItem="gk8-ep-HGa" secondAttribute="bottom" constant="17" id="JHV-ux-pku"/>
+                            <constraint firstItem="QK3-Qt-MgN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="KaZ-oR-ZMo"/>
+                            <constraint firstItem="OtN-xC-cvH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Mle-kU-cxz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gk8-ep-HGa" secondAttribute="trailing" constant="125" id="Skf-Cl-bMP"/>
+                            <constraint firstItem="x9v-mo-vvS" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="51" id="UEH-S5-Svq"/>
+                            <constraint firstItem="gk8-ep-HGa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="V5x-Kh-9uu"/>
+                            <constraint firstItem="gk8-ep-HGa" firstAttribute="top" secondItem="yQt-VL-rO2" secondAttribute="bottom" constant="95" id="VrH-Pj-44o"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OtN-xC-cvH" secondAttribute="trailing" constant="104" id="ZIY-OX-ReM"/>
+                            <constraint firstItem="Nkn-Zn-mDx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bCK-kW-XZX"/>
+                            <constraint firstItem="x9v-mo-vvS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="cBp-et-zuw"/>
+                            <constraint firstItem="QK3-Qt-MgN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cf0-ur-Bvv"/>
+                            <constraint firstItem="Nkn-Zn-mDx" firstAttribute="top" secondItem="OtN-xC-cvH" secondAttribute="bottom" constant="17" id="dlK-XP-vJd"/>
+                            <constraint firstItem="Nkn-Zn-mDx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="61" id="lfa-Tn-qds"/>
+                            <constraint firstItem="QK3-Qt-MgN" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="sPe-ub-jjV"/>
+                            <constraint firstItem="yQt-VL-rO2" firstAttribute="top" secondItem="QK3-Qt-MgN" secondAttribute="bottom" constant="48" id="uh5-XQ-XmE"/>
+                            <constraint firstItem="OtN-xC-cvH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="104" id="uod-XW-U6k"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="128.98550724637681" y="119.0217391304348"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="沖縄" width="1280" height="854"/>
+    </resources>
+</document>
